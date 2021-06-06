@@ -7,11 +7,11 @@
     </constraints>
     <properties>
       <minimumSize width="-1" height="-1"/>
-      <preferredSize width="410" height="520"/>
+      <preferredSize width="420" height="520"/>
     </properties>
     <border type="none"/>
     <children>
-      <grid id="309e0" layout-manager="GridLayoutManager" row-count="6" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="309e0" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="5" left="5" bottom="5" right="5"/>
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
@@ -63,19 +63,9 @@
               <text value="⌫"/>
             </properties>
           </component>
-          <component id="82f2e" class="javax.swing.JButton" binding="inverseButton">
-            <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <focusable value="false"/>
-              <font name="Roboto" size="20" style="1"/>
-              <text value="1/x"/>
-            </properties>
-          </component>
           <component id="e1262" class="javax.swing.JButton" binding="n7Button" default-binding="true">
             <constraints>
-              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -83,29 +73,9 @@
               <text value="7"/>
             </properties>
           </component>
-          <component id="ffd78" class="javax.swing.JButton" binding="pow2Button">
-            <constraints>
-              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <focusable value="false"/>
-              <font name="Roboto" size="20" style="1"/>
-              <text value="x²"/>
-            </properties>
-          </component>
-          <component id="31dbb" class="javax.swing.JButton" binding="sqrtButton">
-            <constraints>
-              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <focusable value="false"/>
-              <font name="Roboto" size="20" style="1"/>
-              <text value="√x"/>
-            </properties>
-          </component>
           <component id="33307" class="javax.swing.JButton" binding="divButton">
             <constraints>
-              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -115,7 +85,7 @@
           </component>
           <component id="13d0c" class="javax.swing.JButton" binding="n8Button" default-binding="true">
             <constraints>
-              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -125,7 +95,7 @@
           </component>
           <component id="ee08f" class="javax.swing.JButton" binding="n9Button" default-binding="true">
             <constraints>
-              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -135,7 +105,7 @@
           </component>
           <component id="c0fbb" class="javax.swing.JButton" binding="mulButton" default-binding="true">
             <constraints>
-              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -145,7 +115,7 @@
           </component>
           <component id="d6b2f" class="javax.swing.JButton" binding="n4Button" default-binding="true">
             <constraints>
-              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -155,7 +125,7 @@
           </component>
           <component id="166f8" class="javax.swing.JButton" binding="n5Button" default-binding="true">
             <constraints>
-              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -165,7 +135,7 @@
           </component>
           <component id="1c167" class="javax.swing.JButton" binding="n6Button" default-binding="true">
             <constraints>
-              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -175,7 +145,7 @@
           </component>
           <component id="e82fb" class="javax.swing.JButton" binding="subButton">
             <constraints>
-              <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -185,7 +155,7 @@
           </component>
           <component id="bbd35" class="javax.swing.JButton" binding="n1Button" default-binding="true">
             <constraints>
-              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -195,7 +165,7 @@
           </component>
           <component id="fe6c4" class="javax.swing.JButton" binding="n2Button" default-binding="true">
             <constraints>
-              <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -205,7 +175,7 @@
           </component>
           <component id="d5ae2" class="javax.swing.JButton" binding="n3Button" default-binding="true">
             <constraints>
-              <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -215,7 +185,7 @@
           </component>
           <component id="5e7d7" class="javax.swing.JButton" binding="addButton">
             <constraints>
-              <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -225,7 +195,7 @@
           </component>
           <component id="753ed" class="javax.swing.JButton" binding="n0Button" default-binding="true">
             <constraints>
-              <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -235,7 +205,7 @@
           </component>
           <component id="19ce4" class="javax.swing.JButton" binding="dotButton">
             <constraints>
-              <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -245,7 +215,7 @@
           </component>
           <component id="5bbf1" class="javax.swing.JButton" binding="calcButton">
             <constraints>
-              <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -255,7 +225,7 @@
           </component>
           <component id="afe23" class="javax.swing.JButton" binding="signButton">
             <constraints>
-              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -276,9 +246,19 @@
               <text value="DEG"/>
             </properties>
           </component>
+          <component id="1df91" class="javax.swing.JButton" binding="expButton">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <font name="Roboto" size="20" style="1"/>
+              <text value="eᵡ"/>
+            </properties>
+          </component>
           <component id="4528f" class="javax.swing.JButton" binding="lnButton" default-binding="true">
             <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -286,19 +266,29 @@
               <text value="ln"/>
             </properties>
           </component>
-          <component id="1df91" class="javax.swing.JButton" binding="expButton">
+          <component id="fdf3" class="javax.swing.JButton" binding="absButton">
             <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
               <font name="Roboto" size="20" style="1"/>
-              <text value="exp"/>
+              <text value="|x|"/>
+            </properties>
+          </component>
+          <component id="392cd" class="javax.swing.JButton" binding="tenXButton">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <font name="Roboto" size="20" style="1"/>
+              <text value="10ᵡ"/>
             </properties>
           </component>
           <component id="721e0" class="javax.swing.JButton" binding="sinButton" default-binding="true">
             <constraints>
-              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -308,7 +298,7 @@
           </component>
           <component id="c0a4a" class="javax.swing.JButton" binding="cosButton" default-binding="true">
             <constraints>
-              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
@@ -318,12 +308,72 @@
           </component>
           <component id="209f1" class="javax.swing.JButton" binding="tanButton" default-binding="true">
             <constraints>
-              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <focusable value="false"/>
               <font name="Roboto" size="20" style="1"/>
               <text value="tan"/>
+            </properties>
+          </component>
+          <component id="31dbb" class="javax.swing.JButton" binding="sqrtButton">
+            <constraints>
+              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <font name="Roboto" size="20" style="1"/>
+              <text value="√x"/>
+            </properties>
+          </component>
+          <component id="ffd78" class="javax.swing.JButton" binding="pow2Button">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <font name="Roboto" size="20" style="1"/>
+              <text value="x²"/>
+            </properties>
+          </component>
+          <component id="82f2e" class="javax.swing.JButton" binding="inverseButton">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <font name="Roboto" size="20" style="1"/>
+              <text value="1/x"/>
+            </properties>
+          </component>
+          <component id="64d96" class="javax.swing.JButton" binding="asinButton">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <font name="Roboto" size="20" style="1"/>
+              <text value="sin⁻¹"/>
+            </properties>
+          </component>
+          <component id="9b6e8" class="javax.swing.JButton" binding="acosButton">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <font name="Roboto" size="20" style="1"/>
+              <text value="cos⁻¹"/>
+            </properties>
+          </component>
+          <component id="a3223" class="javax.swing.JButton" binding="atanButton">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <font name="Roboto" size="20" style="1"/>
+              <text value="tan⁻¹"/>
             </properties>
           </component>
         </children>
@@ -354,7 +404,7 @@
               <horizontalAlignment value="11"/>
               <margin top="2" left="6" bottom="2" right="6"/>
               <requestFocusEnabled value="true"/>
-              <text value="4654654"/>
+              <text value="0"/>
             </properties>
           </component>
           <component id="63941" class="javax.swing.JTextField" binding="lastInput">

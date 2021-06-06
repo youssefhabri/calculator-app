@@ -2,11 +2,12 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 public class CalculatorModel {
-
+    // abs 10X asin acos atan
     enum Operations {
         Add, Sub, Mul, Div,
         Sqrt, Pow2, Inverse, Mod,
-        Ln, Exp, Sin, Cos, Tan
+        Ln, Exp, Sin, Cos, Tan,
+        Abs, TenX, ArcSin, ArcCos, ArcTan
     }
 
     enum AngleUnit {
@@ -136,7 +137,9 @@ public class CalculatorModel {
 
     public void inputOperation(Operations op) {
         switch (op) {
-            case Sqrt, Pow2, Inverse, Ln, Exp, Sin, Cos, Tan -> {
+            case Sqrt, Pow2, Inverse, Abs, TenX,
+                    Ln, Exp, Sin, Cos, Tan,
+                    ArcCos, ArcSin, ArcTan -> {
                 var prevOperation = operation;
                 this.operation = op;
                 var result = calculate();
@@ -250,9 +253,31 @@ public class CalculatorModel {
                 yield Math.log(curr);
             }
             case Exp -> Math.exp(curr);
+            case Abs -> Math.abs(curr);
+            case TenX -> Math.pow(10, curr);
             case Sin -> Math.sin(toRad(curr));
+            case ArcSin -> {
+                if (Math.abs(curr) > 1.0) {
+                    errorMode = true;
+                    input = "Invalid input";
+                    yield 0.0;
+                };
+
+                yield Math.asin(toRad(curr));
+            }
             case Cos -> Math.cos(toRad(curr));
+            case ArcCos -> {
+                if (Math.abs(curr) > 1.0) {
+                    errorMode = true;
+                    input = "Invalid input";
+                    yield 0.0;
+                };
+
+                yield Math.acos(toRad(curr));
+            }
             case Tan -> Math.tan(toRad(curr));
+            case ArcTan -> Math.atan(toRad(curr));
+
         };
 
         return CalculatorModel.truncateDecimal(result, 5).doubleValue();

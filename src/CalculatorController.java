@@ -15,12 +15,11 @@ public class CalculatorController {
     private CalculatorView view;
     private final CalculatorMenu menu;
     private final CalculatorModel model;
-    private CalculatorMode mode = CalculatorMode.Scientific;
+    private CalculatorMode mode = CalculatorMode.Basic;
 
     public CalculatorController(CalculatorModel model) {
         this.menu = new CalculatorMenu(mode);
-        this.menu.setVisible(false);
-        this.view = new CalculatorScientificView(menu);
+        this.view = new CalculatorBasicView(menu);
         this.model = model;
 
         initializeCalculator();
@@ -41,22 +40,22 @@ public class CalculatorController {
         }
 
         ArrayList<String> buttons = new ArrayList<>();
-        String[] basicButtons = {
-                // Actions
+        var basicButtons = Arrays.asList(// Actions
                 "DEL", "DOT", "CLR_ENTRY", "CLR_ALL", "CALC", "SIGN",
                 // Operations
                 "ADD", "SUB", "MUL", "DIV", "SQRT", "POW2", "INVERSE", "MOD"
-        };
-        buttons.addAll(Arrays.stream(basicButtons).toList());
+        );
+        buttons.addAll(basicButtons);
 
         if (mode == CalculatorMode.Scientific) {
-            String[] sciButtons = {
+            List<String> sciButtons = Arrays.asList(
                     // Actions
                     "ANGLE",
                     // Operations
-                    "LN", "EXP", "SIN", "COS", "TAN"
-            };
-            buttons.addAll(Arrays.stream(sciButtons).toList());
+                    "LN", "EXP", "SIN", "COS", "TAN",
+                    "ABS", "10X", "ASIN", "ACOS", "ATAN"
+            );
+            buttons.addAll(sciButtons);
         }
 
         for(var btn: buttons) {
@@ -90,7 +89,7 @@ public class CalculatorController {
     }
 
     private void changeView() {
-        System.out.println("Changing the view");
+//        System.out.println("Changing the view");
         this.view.setVisible(false);
         switch (mode) {
             case Basic -> {
@@ -114,7 +113,6 @@ public class CalculatorController {
         setDisplayFontSize(model.getErrorMode() ? 28 : 36);
 
         view.setDisplayField(model.getInput());
-        view.getBtn("ANGLE").setText(model.getAngleAsString());
 
         if (model.getLastInput() == null) {
             view.getLastInputDisplay().setText("");
@@ -126,6 +124,9 @@ public class CalculatorController {
 
             view.getLastInputDisplay().setText(lastInput);
         }
+
+        if (mode == CalculatorMode.Scientific)
+            view.getBtn("ANGLE").setText(model.getAngleAsString());
     }
 
     // TODO switch to an enum for the buttons
@@ -151,9 +152,14 @@ public class CalculatorController {
             case "MOD" -> model.inputOperation(CalculatorModel.Operations.Mod);
             case "LN" -> model.inputOperation(CalculatorModel.Operations.Ln);
             case "EXP" -> model.inputOperation(CalculatorModel.Operations.Exp);
+            case "ABS" -> model.inputOperation(CalculatorModel.Operations.Abs);
+            case "10X" -> model.inputOperation(CalculatorModel.Operations.TenX);
             case "SIN" -> model.inputOperation(CalculatorModel.Operations.Sin);
+            case "ASIN" -> model.inputOperation(CalculatorModel.Operations.ArcSin);
             case "COS" -> model.inputOperation(CalculatorModel.Operations.Cos);
+            case "ACOS" -> model.inputOperation(CalculatorModel.Operations.ArcCos);
             case "TAN" -> model.inputOperation(CalculatorModel.Operations.Tan);
+            case "ATAN" -> model.inputOperation(CalculatorModel.Operations.ArcTan);
             default -> System.out.println("Unknown button: " + btn);
         }
 

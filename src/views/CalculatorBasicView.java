@@ -1,6 +1,5 @@
 package views;
 
-import enums.CalculatorMode;
 import widgets.CalculatorMenu;
 
 import javax.swing.*;
@@ -45,6 +44,7 @@ public class CalculatorBasicView extends CalculatorView {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Calculator App");
         setContentPane(rootPanel);
+        setLocation(100, 100);
         setResizable(false);
         setVisible(true);
         pack();

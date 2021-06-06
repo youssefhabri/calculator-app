@@ -43,6 +43,11 @@ public class CalculatorScientificView extends CalculatorView {
     private JButton sinButton;
     private JButton cosButton;
     private JButton tanButton;
+    private JButton absButton;
+    private JButton tenXButton;
+    private JButton asinButton;
+    private JButton acosButton;
+    private JButton atanButton;
 
     public CalculatorScientificView(CalculatorMenu menu) {
         setJMenuBar(menu);
@@ -50,6 +55,7 @@ public class CalculatorScientificView extends CalculatorView {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Calculator App");
         setContentPane(rootPanel);
+        setLocation(100, 100);
         setResizable(false);
         setVisible(true);
         pack();
@@ -117,6 +123,11 @@ public class CalculatorScientificView extends CalculatorView {
             case "SIN" -> sinButton;
             case "COS" -> cosButton;
             case "TAN" -> tanButton;
+            case "10X" -> tenXButton;
+            case "ABS" -> absButton;
+            case "ASIN" -> asinButton;
+            case "ACOS" -> acosButton;
+            case "ATAN" -> atanButton;
             default -> throw new IllegalStateException("Unknown view button: " + btn);
         };
     }
