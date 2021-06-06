@@ -89,8 +89,7 @@ public class CalculatorController {
     }
 
     private void changeView() {
-//        System.out.println("Changing the view");
-        this.view.setVisible(false);
+        this.view.dispose();
         switch (mode) {
             case Basic -> {
                 this.view = new CalculatorBasicView(this.menu);
@@ -99,7 +98,7 @@ public class CalculatorController {
                 this.view = new CalculatorScientificView(this.menu);
             }
         }
-        this.view.setVisible(true);
+        this.view.repaint();
 
         initializeCalculator();
     }
